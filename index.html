@@ -15,6 +15,25 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script>
+            let imgVar=0;
+
+            function imgClick() {
+                const img01="assets/img/avataaars.svg";
+                const img02="assets/img/ssw.jpg";
+
+                let elemetValue=document.getElementsByClassName("masthead-avatar mb-5")[0];
+                console.log(elemetValue);
+                if(imgVar==0){
+                    elemetValue.src=img02;
+                }
+                else{
+                    elemetValue.src=img01;
+                }
+                imgVar^=1;
+            }
+
+        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -38,9 +57,10 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <h1 class="masthead-heading text-uppercase mb-0"><h2>소통하는 기획자</h2></h1>
+                <h1 class="masthead-heading text-uppercase mb-0">성시원</h1>
+                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" onclick="imgClick()" style="margin-top:5px;border-radius: 100%;" alt="클릭하시면 이미지가 변경됩니다" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -48,7 +68,8 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+                <p>안녕하세요. 세상에 없는 서비스를 창조하는 IT 서비스 설계자 성시원입니다.</p>
+                <p class="masthead-subheading font-weight-light mb-0">IT 서비스 기획자 - Web / App 기획자 - 개발자</p>
             </div>
         </header>
         <!-- Portfolio Section-->
@@ -134,14 +155,14 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">안녕하세요. 세상에 없는 서비스를 창조하는 IT 서비스 설계자 성시원입니다.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">스스로 할 수 있는 일을 파악하고 실행 방법을 알아내어 완수하는  10년차 기획자로, 웹 개발자부터 커리어를 시작하여 IT개발에 대한 전반적인 이해도가 높고, 다양한 구축프로젝트에서 웹화면기획을 거처 , IT 스타트업에서 신규 서비스 기획까지 경험하였습니다.</p></div>
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                    <a class="btn btn-xl btn-outline-light" href="https://1drv.ms/b/s!AkyKhY6nazkWg4ElP4hAQqQt9EyrLg?e=sG9eh6">
                         <i class="fas fa-download me-2"></i>
-                        Free Download!
+                        이력서 다운로드
                     </a>
                 </div>
             </div>
